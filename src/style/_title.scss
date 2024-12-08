@@ -1,0 +1,11 @@
+@use 'var';
+
+.title {
+    position: relative;
+    margin: 0;
+    color: var.$color-text;
+    font-family: var.$font-family;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.13em;
+}

@@ -3,6 +3,9 @@
 .story {
     box-sizing: border-box;
     position: relative;
+    width: 100%;
+    margin: 0 auto;
+
     &__container {
         position: relative;
         box-sizing: border-box;
@@ -11,18 +14,12 @@
         align-items: center;
         flex-direction: column;
         width: 100%;
-        max-width: 941px;
+        max-width: 981px;
         margin: 0 auto;
-        padding-top: 57px;
+        padding: 50px 15px 0 25px;
     }
     &__title {
-        position: relative;
-        margin: 0;
-        color: var.$color-text;
-        font-family: var.$font-family;
-        font-size: 18px;
-        font-weight: 700;
-        letter-spacing: 0.13em;
+        padding-left: 12px;
         text-align: center;
 
         &::after {
@@ -38,18 +35,100 @@
     &__wrapper {
         box-sizing: border-box;
         display: flex;
-        gap: 77px;
+        gap: 80px;
+        margin-top: 50px;
+
+        @media #{var.$bw1020} {
+            flex-direction: column;
+            gap: 40px;
+        }
+    }
+}
+
+.block1 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    width: 100%;
+    max-width: 405px;
+
+    @media #{var.$bw1020} {
+        max-width: 100%;
     }
 
-    &__block1 {
-        box-sizing: border-box;
-        display: flex;
-        flex-direction: column;
-        gap: 30px;
+    &__desc1 {
+        margin: 0;
+        color: var.$color-text;
+        font-family: var.$font-family;
+        font-size: 20px;
+        font-weight: 700;
+        letter-spacing: 0.01em;
+        line-height: 1.388;
     }
-    &__block2 {
+
+    &__span {
+        letter-spacing: 0.01em;
+        color: var.$color-text2;
+    }
+
+    &__desc2 {
+        margin: 0;
+        color: var.$color-text;
+        font-family: var.$font-family;
+        font-size: 13px;
+        font-weight: 400;
+        line-height: 177%;
+        letter-spacing: 0.01em;     
+    }
+}
+
+.block2 {
+    box-sizing: border-box;
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(3, 140px);
+    gap: 20px;
+    margin-top: 33px;
+
+    @media #{var.$bw1020} {
+        justify-content: center;
+        gap: 80px;
+        margin-top: 0;
+    }
+    @media #{var.$bw768} {
+        grid-template-columns: repeat(1, 140px);
+        gap: 20px;
+    }
+
+    &__item1 {
+        background-image: url(/src/img/img1.jpg);
+    }
+
+    &__item2 {
+        background-image: url(/src/img/img2.jpg);
+    }
+
+    &__item3 {
+        background-image: url(/src/img/img3.jpg);
+    }
+
+    &__item1,
+    &__item2,
+    &__item3 {
         box-sizing: border-box;
-        display: flex;
-        flex-direction: row;
+        height: 100%;
+        min-height: 224px;
+        margin: 0;
+        padding: 15px;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        color: var.$color-white;
+        font-family: var.$font-family;
+        font-size: 24px;
+        font-weight: 800;
+        line-height: 121%;
+        letter-spacing: 0.01em;
     }
 }
