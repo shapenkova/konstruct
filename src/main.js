@@ -10,6 +10,7 @@ import poster1 from './html/first-poster.html';
 import story from './html/story.html'
 import capabilities from './html/capabilities.html';
 import want from './html/want.html';
+import form from './html/newsletter.html';
 
 const app = document.getElementById('app');
 app.innerHTML = `   
@@ -18,6 +19,7 @@ app.innerHTML = `
     ${story}
     ${capabilities}
     ${want}
+    ${form}
     ${footer}`;
 
    //навигационное меню
