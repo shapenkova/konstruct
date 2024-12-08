@@ -34,4 +34,22 @@
             margin: 10px auto 0;
         }
     }
+
+    &__wrapper {
+        box-sizing: border-box;
+        display: flex;
+        gap: 77px;
+    }
+
+    &__block1 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    &__block2 {
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+    }
 }
