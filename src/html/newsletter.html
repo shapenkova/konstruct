@@ -1,8 +1,24 @@
 <section class="newsletter">
     <div class="newsletter__container">
         <h3 class="newsletter__title">Newsletter Signup</h3>
-        <form class="newsletter__form form">
-            <button type="submit" class="newsletter__btn btn">Signup</button>
+        <form 
+            class="newsletter__form form" 
+            id="js-subscribeForm"
+        >
+            <div class="form__subscribe">
+                <label class="field form__field">
+                    <input  
+                        type="email" 
+                        placeholder="test@youremail.com" 
+                        name="email" 
+                        class="field__input" 
+                        required
+                        id="js-subscribeEmail"
+                    >
+                </label>
+                <button type="submit" class="field__btn btn">Signup</button>
+            </div>
         </form>
+        
     </div>
 </section>

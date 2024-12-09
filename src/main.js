@@ -22,7 +22,8 @@ app.innerHTML = `
     ${form}
     ${footer}`;
 
-   //навигационное меню
+    
+//навигационное меню
 const root = document.documentElement;
 const navToggle = document.querySelector("#js-navToggle");
 navToggle.addEventListener("click", function () {

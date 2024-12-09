@@ -18,11 +18,14 @@
     letter-spacing: 0.04em;
     text-decoration: none;
     text-transform: uppercase;
-    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    background-size: 300% 100%;
+    background-image: linear-gradient(to right, #25aae1, #4481eb, #04befe, #3f86ed);
+    transition: all .4s ease-in-out;
     cursor: pointer;
     &:hover {
-        background-color: var.$color-bg;
-        box-shadow: 4px 8px 40px 0 rgba(8, 24, 111, 0.2);
+        box-shadow: 0 4px 15px 0 #4184eabf;
+        background-position: 100% 0;
     }
 
     @media #{var.$bw768} {

@@ -15,6 +15,10 @@
         max-width: 1440px;
         overflow: hidden;
         padding-top: 115px;
+
+        @media #{var.$bw1020} {
+            padding-top: 50px;
+        }
     }
 
     &__box1 {
@@ -68,6 +72,7 @@
 
         @media #{var.$bw1020} {
             padding: 20px;
+            gap: 15px;
         }
     }
 
